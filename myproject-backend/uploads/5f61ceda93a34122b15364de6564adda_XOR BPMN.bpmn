@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.6.1">
+  <process id="Process_1" isExecutable="false">
+    <startEvent id="StartEvent_1y45yut" name="Start">
+      <outgoing>SequenceFlow_0h21x7r</outgoing>
+    </startEvent>
+    <sequenceFlow id="SequenceFlow_0h21x7r" sourceRef="StartEvent_1y45yut" targetRef="ExclusiveGateway_15hu1pt" />
+    <task id="Activity_0mblya3" name="tacheC">
+      <incoming>Flow_102kqcj</incoming>
+    </task>
+    <sequenceFlow id="Flow_102kqcj" name="non" sourceRef="ExclusiveGateway_15hu1pt" targetRef="Activity_0mblya3" />
+    <exclusiveGateway id="ExclusiveGateway_15hu1pt" name="desired dish?">
+      <incoming>SequenceFlow_0h21x7r</incoming>
+      <outgoing>Flow_102kqcj</outgoing>
+      <outgoing>Flow_0kl1zl6</outgoing>
+    </exclusiveGateway>
+    <task id="Activity_0tb85zd" name="tacheB">
+      <incoming>Flow_0kl1zl6</incoming>
+    </task>
+    <sequenceFlow id="Flow_0kl1zl6" name="oui" sourceRef="ExclusiveGateway_15hu1pt" targetRef="Activity_0tb85zd" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="Activity_0tb85zd_di" bpmnElement="Activity_0tb85zd">
+        <omgdc:Bounds x="420" y="70" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0mblya3_di" bpmnElement="Activity_0mblya3">
+        <omgdc:Bounds x="420" y="230" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_13tzwks_di" bpmnElement="ExclusiveGateway_15hu1pt" isMarkerVisible="true">
+        <omgdc:Bounds x="275" y="175" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="335" y="193" width="66" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1y45yut_di" bpmnElement="StartEvent_1y45yut">
+        <omgdc:Bounds x="152" y="182" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="159" y="225" width="24" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0h21x7r_di" bpmnElement="SequenceFlow_0h21x7r">
+        <omgdi:waypoint x="188" y="200" />
+        <omgdi:waypoint x="275" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0kl1zl6_di" bpmnElement="Flow_0kl1zl6">
+        <omgdi:waypoint x="300" y="175" />
+        <omgdi:waypoint x="300" y="110" />
+        <omgdi:waypoint x="420" y="110" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="308" y="140" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_102kqcj_di" bpmnElement="Flow_102kqcj">
+        <omgdi:waypoint x="300" y="225" />
+        <omgdi:waypoint x="300" y="270" />
+        <omgdi:waypoint x="420" y="270" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="306" y="245" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

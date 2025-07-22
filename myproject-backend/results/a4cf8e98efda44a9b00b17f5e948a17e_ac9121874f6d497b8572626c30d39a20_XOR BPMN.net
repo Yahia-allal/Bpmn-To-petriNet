@@ -1,0 +1,21 @@
+p 100.0 100.0 p_start_0 1 n
+p 900.0 100.0 p_end_0 0 n
+t 300.0 100.0 t_Task_1hcentk n 0 w n {} ne
+t 300.0 150.0 t_Activity_0tb85zd n 0 w n {} ne
+t 300.0 200.0 t_Activity_0mblya3 n 0 w n {} ne
+t 700.0 100.0 t_ExclusiveGateway_15hu1pt n 0 w n {} ne
+t 700.0 150.0 t_Gateway_1x00tgh n 0 w n {} ne
+e p_start_0 t_Task_1hcentk 1 n
+p 600.0 150.0 p_join_0 0 n
+e p_join_0 t_ExclusiveGateway_15hu1pt 1 n
+e t_Task_1hcentk p_join_0 1 n
+p 500.0 200.0 p_split_1 0 n
+e t_ExclusiveGateway_15hu1pt p_split_1 1 n
+e p_split_1 t_Activity_0tb85zd 1 n
+e p_split_1 t_Activity_0mblya3 1 n
+p 600.0 250.0 p_join_2 0 n
+e p_join_2 t_Gateway_1x00tgh 1 n
+e t_Activity_0tb85zd p_join_2 1 n
+e t_Activity_0mblya3 p_join_2 1 n
+e t_Gateway_1x00tgh p_end_0 1 n
+h {converted_net}

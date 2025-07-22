@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.6.1">
+  <process id="Process_1" isExecutable="false">
+    <parallelGateway id="Gateway_0sqtn1r">
+      <outgoing>Flow_0z0712a</outgoing>
+      <outgoing>Flow_07hpqz2</outgoing>
+    </parallelGateway>
+    <task id="Activity_1abfrc4" name="tache A">
+      <incoming>Flow_0z0712a</incoming>
+    </task>
+    <task id="Activity_0f8m0gl" name="tache B">
+      <incoming>Flow_07hpqz2</incoming>
+    </task>
+    <sequenceFlow id="Flow_0z0712a" sourceRef="Gateway_0sqtn1r" targetRef="Activity_1abfrc4" />
+    <sequenceFlow id="Flow_07hpqz2" sourceRef="Gateway_0sqtn1r" targetRef="Activity_0f8m0gl" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="Gateway_0e3w4gx_di" bpmnElement="Gateway_0sqtn1r">
+        <omgdc:Bounds x="155" y="175" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1abfrc4_di" bpmnElement="Activity_1abfrc4">
+        <omgdc:Bounds x="230" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0f8m0gl_di" bpmnElement="Activity_0f8m0gl">
+        <omgdc:Bounds x="230" y="240" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0z0712a_di" bpmnElement="Flow_0z0712a">
+        <omgdi:waypoint x="180" y="175" />
+        <omgdi:waypoint x="180" y="120" />
+        <omgdi:waypoint x="230" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07hpqz2_di" bpmnElement="Flow_07hpqz2">
+        <omgdi:waypoint x="180" y="225" />
+        <omgdi:waypoint x="180" y="280" />
+        <omgdi:waypoint x="230" y="280" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

@@ -1,0 +1,71 @@
+p 100.0 100.0 p_start_0 1 n
+p 900.0 100.0 p_end_0 0 n
+t 300.0 100.0 t_Activity_0ft9ies n 0 w n {} ne
+t 300.0 150.0 t_Activity_0wi49bt n 0 w n {} ne
+t 300.0 200.0 t_Activity_0bmkvkk n 0 w n {} ne
+t 300.0 250.0 t_Activity_0ovwu75 n 0 w n {} ne
+t 300.0 300.0 t_Activity_1frdyvf n 0 w n {} ne
+t 300.0 350.0 t_Activity_1wsjvbe n 0 w n {} ne
+t 300.0 400.0 t_Activity_0kjw6md n 0 w n {} ne
+t 300.0 450.0 t_Activity_1sniqag n 0 w n {} ne
+t 300.0 500.0 t_Activity_01rr0kt n 0 w n {} ne
+t 700.0 100.0 t_Gateway_112sqdf n 0 w n {} ne
+t 700.0 150.0 t_Gateway_0o8uqdw n 0 w n {} ne
+t 700.0 200.0 t_Gateway_1agvzbm n 0 w n {} ne
+t 700.0 250.0 t_Gateway_15v1uzb n 0 w n {} ne
+t 700.0 300.0 t_Gateway_0l9r9hu n 0 w n {} ne
+e p_start_0 t_Activity_0kjw6md 1 n
+p 550.0 150.0 p_join_and_0 0 n
+e t_Activity_0wi49bt p_join_and_0 1 n
+e p_join_and_0 t_Gateway_15v1uzb 1 n
+p 450.0 150.0 p_split_in_1 0 n
+t 500.0 150.0 t_split_Gateway_15v1uzb n 0 w n {} ne
+e p_split_in_1 t_split_Gateway_15v1uzb 1 n
+e t_Gateway_15v1uzb p_split_in_1 1 n
+p 550.0 200.0 p_split_out_1 0 n
+e t_split_Gateway_15v1uzb p_split_out_1 1 n
+e p_split_out_1 t_Activity_0bmkvkk 1 n
+p 550.0 250.0 p_split_out_2 0 n
+e t_split_Gateway_15v1uzb p_split_out_2 1 n
+e p_split_out_2 t_Activity_0ovwu75 1 n
+p 550.0 300.0 p_join_and_3 0 n
+e t_Activity_0bmkvkk p_join_and_3 1 n
+e p_join_and_3 t_Gateway_112sqdf 1 n
+p 550.0 350.0 p_join_and_4 0 n
+e t_Activity_0ovwu75 p_join_and_4 1 n
+e p_join_and_4 t_Gateway_112sqdf 1 n
+p 450.0 350.0 p_split_in_5 0 n
+t 500.0 350.0 t_split_Gateway_112sqdf n 0 w n {} ne
+e p_split_in_5 t_split_Gateway_112sqdf 1 n
+e t_Gateway_112sqdf p_split_in_5 1 n
+p 550.0 400.0 p_split_out_5 0 n
+e t_split_Gateway_112sqdf p_split_out_5 1 n
+e p_split_out_5 t_Gateway_1agvzbm 1 n
+p 500.0 450.0 p_split_6 0 n
+e t_Gateway_1agvzbm p_split_6 1 n
+e p_split_6 t_Activity_1wsjvbe 1 n
+e t_Activity_1wsjvbe p_end_0 1 n
+p 500.0 500.0 p_mid_7 0 n
+e t_Activity_0kjw6md p_mid_7 1 n
+e p_mid_7 t_Activity_0ft9ies 1 n
+p 500.0 550.0 p_split_8 0 n
+e t_Gateway_0o8uqdw p_split_8 1 n
+e p_split_8 t_Activity_1frdyvf 1 n
+e p_split_8 t_Activity_0wi49bt 1 n
+p 600.0 600.0 p_join_9 0 n
+e p_join_9 t_Gateway_0o8uqdw 1 n
+e t_Activity_0ft9ies p_join_9 1 n
+p 500.0 650.0 p_mid_10 0 n
+e t_Activity_1sniqag p_mid_10 1 n
+e p_mid_10 t_Activity_01rr0kt 1 n
+p 500.0 700.0 p_mid_11 0 n
+e t_Activity_01rr0kt p_mid_11 1 n
+e p_mid_11 t_Activity_1sniqag 1 n
+p 600.0 750.0 p_join_12 0 n
+e p_join_12 t_Gateway_0l9r9hu 1 n
+e t_Activity_1frdyvf p_join_12 1 n
+p 500.0 800.0 p_split_13 0 n
+e t_Gateway_0l9r9hu p_split_13 1 n
+e p_split_13 t_Activity_01rr0kt 1 n
+e p_split_13 t_Gateway_1agvzbm 1 n
+h {converted_net}
