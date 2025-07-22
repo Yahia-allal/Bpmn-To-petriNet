@@ -1,0 +1,102 @@
+.transformation-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* pour centrer les titres et boutons */
+}
+
+.transformation-main-title {
+  color: #5e2ca5;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-green, .btn-purple, .btn-home {
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 16px 30px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  border: none;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.btn-purple {
+  background-color: #5e2ca5;
+  color: white;
+}
+.btn-purple:hover {
+  background-color: #4b2381;
+}
+
+.btn-home {
+  background-color: #f39c12;
+  color: white;
+}
+.btn-home:hover {
+  background-color: #e67e22;
+}
+
+.image-wrapper {
+  width: 95%;
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #dedddd;
+  margin: 40px auto 20px; /* marge top 30px pour l’espace */
+}
+
+.petri-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  transform-origin: top center;
+}
+
+.zoom-controls {
+  margin-top: 60px; /* ou la valeur que tu veux */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.zoom-controls button {
+  padding: 5px 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #5e2ca5;
+  background-color: white;
+  color: #5e2ca5;
+  cursor: pointer;
+}
+.zoom-controls button:hover {
+  background-color: #5e2ca5;
+  color: white;
+}
+
+.zoom-level {
+  font-weight: bold;
+  color: #5e2ca5;
+}

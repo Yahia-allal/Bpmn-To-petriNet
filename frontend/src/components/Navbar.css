@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #5e2ca5;
+  padding: 15px 40px; /* Augmente le padding vertical et horizontal */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar a, .navbar .custom-link {
+  color: white;
+  font-size: 1.7rem;  /* Augmente la taille de la police */
+  font-weight: 630;   /* Un peu plus gras */
+  margin: 0 25px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover, .navbar .custom-link:hover {
+  color: #d2b7ff;
+}
+
+.navbar .active {
+  border-bottom: 4px solid white; /* un peu plus épais */
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* pour positionner logo à gauche */
+}
+
+/* Logo à gauche absolu */
+.navbar-logo {
+  position: absolute;
+  left: -22px; /* même marge que le padding de .navbar */
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+}
+
+/* Le ul reste centré */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Styles des liens */
+.navbar ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+  font-family: 'Segoe UI', Geneva, Verdana, sans-serif; /* ajouté */
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  border-bottom-color: #e0b0ff;
+}
